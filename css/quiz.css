@@ -74,3 +74,9 @@ button:active {
   transform: scale(0.98);
   box-shadow: 0 0 30px rgba(53, 184, 227, 1);
 }
+
+@media (max-width: 768px) {
+  #quiz {
+    width: 95%;
+  }
+}
