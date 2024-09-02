@@ -1,0 +1,77 @@
+body {
+  background: black;
+}
+
+#library {
+  margin: 3rem;
+  text-align: center;
+  color: white;
+}
+
+#library a {
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  color: white;
+}
+
+nav {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+nav i {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 2.6rem;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 70%;
+  margin: 5rem auto 0;
+}
+
+
+
+.icon-box {
+  border: 3px solid #fff;
+  border-radius: 50%;
+  width: 7rem;
+  height: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4.5rem;
+  box-shadow: 0 0 20px rgba(53, 184, 227, 0.7); /* Glowing effect */
+  transition: all 0.5s ease; /* Smooth transition on hover */
+}
+
+.icons i {
+  font-size: 4rem;
+  text-shadow: 0 0 20px rgba(53, 184, 227, 0.7); /* Glowing effect without a black background */
+}
+
+.icons p {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+}
+
+a:hover .icon-box {
+  transform: scale(1.1);
+}
+
+.icon-box:hover {
+  box-shadow: 0 0 30px rgba(53, 184, 227, 1); /* Stronger glow on hover */
+  transform: scale(1.1);
+}
+
+.icon-box i:hover {
+  text-shadow: 0 0 30px rgba(53, 184, 227, 1); /* Stronger glow on hover */
+}

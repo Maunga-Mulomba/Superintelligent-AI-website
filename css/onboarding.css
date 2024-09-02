@@ -1,0 +1,39 @@
+body {
+  background-color: black;
+  font-family: "Courier New", monospace;
+  font-weight: bold;
+}
+
+#onboarding {
+  padding: 3.5rem;
+  width: 65%;
+  margin: 2rem auto;
+  background-image: url("/images/paper.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+}
+
+h1 {
+  color: #bc1823;
+  margin-bottom: 3.5rem;
+  text-align: center;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+.greeting {
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-align: center;
+}
+
+@media (max-width: 560px) {
+  #onboarding {
+    width: 90%;
+    padding: 1rem; /* Adjust padding as needed */
+    margin: 1rem auto; /* Adjust margin as needed */
+  }
+}

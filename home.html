@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lugus Centre for Technology Safety - Welcome</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div id="home" class="glassmorphism">
+      <h1>
+        <span>Lugus Institute </span><br />
+        Library
+      </h1>
+      <p>Please enter your name</p>
+      <div class="user-input">
+        <input type="text" id="nameInput" placeholder="Your Name" required />
+        <button id="startButton" onclick="saveName()">Start</button>
+      </div>
+    </div>
+
+    <script>
+      // Function to save the user's name
+      function saveName() {
+        const name = document.getElementById("nameInput").value;
+
+        if (name) {
+          // Save the name to localStorage so it can be accessed on other pages
+          localStorage.setItem("userName", name);
+
+          // Redirect to the Library page (or whichever page you want to go next)
+          window.location.href = "library.html";
+        } else {
+          alert("Please enter your name.");
+        }
+      }
+
+      // Function to get the user's name (can be used on other pages)
+      function getName() {
+        return localStorage.getItem("userName");
+      }
+    </script>
+  </body>
+</html>

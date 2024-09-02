@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment - Lugus Centre for Technology Safety</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/assignment.css" />
+    <script>
+      // Function to insert the user's name into the page
+      function insertUserName() {
+        const userName = localStorage.getItem("userName");
+        if (userName) {
+          document.getElementById("userName").textContent = userName;
+        }
+      }
+
+      // Run the insertUserName function on page load
+      window.onload = insertUserName;
+    </script>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="home.html">
+            <i class="fa-solid fa-house"></i>
+          </a>
+          <!-- Home link -->
+        </div>
+        <!-- Burger Menu Icon -->
+        <div class="burger-menu">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+          <li><a href="library.html">Library</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="onboarding.html">Onboarding</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+          <li><a href="assignment.html">Assignment</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- assignment -->
+    <div id="assignment">
+      <h1>Agent Assignment Brief</h1>
+
+      <p>
+        Welcome to your first operational assignment with the Lugus Centre for
+        Technology Safety. This document outlines your mission objectives, cover
+        identity, and the specific tasks you are expected to carry out during
+        this high-stakes operation.
+      </p>
+
+      <h2>Mission Overview</h2>
+      <p>
+        Your mission is to infiltrate Raktus Island under the guise of working
+        for a proxy company, Genovia Supply Co., which provides essential office
+        supplies and stationery to government facilities on the island. This
+        cover will grant you special access to various locations, including the
+        highly restricted areas where Project Horus is being developed.
+      </p>
+
+      <h2>Cover Identity</h2>
+      <p>
+        Your cover identity is as an employee of Genovia Supply Co.,
+        specifically as a logistics coordinator responsible for overseeing the
+        delivery and management of office supplies. This role will allow you to
+        move freely within the government buildings and research facilities on
+        Raktus Island without raising suspicion.
+      </p>
+
+      <h2>Objectives</h2>
+      <div>
+        <div>
+          <p>
+            1. Identify Key Personnel: Use your access to identify and monitor
+            the key individuals involved in Project Horus. Pay particular
+            attention to those with direct access to the AI’s core development.
+          </p>
+        </div>
+        <div>
+          <p>
+            2. Gather Intelligence: Leverage your role to gather as much
+            information as possible about the AI's capabilities, training
+            methods, and intended applications. Your observations should focus
+            on the AI’s interactions with human operators and any signs of
+            autonomous decision-making.
+          </p>
+        </div>
+        <div>
+          <p>
+            3. Document Unusual Activity: Report any abnormal behavior or
+            developments related to the AI that could indicate a risk of it
+            surpassing its intended control parameters. This includes observing
+            any interactions between the AI and government officials.
+          </p>
+        </div>
+        <div>
+          <p>
+            4. Secure Access Points: Identify any security weaknesses in the
+            facility’s infrastructure that could be exploited in the event of an
+            emergency extraction or further infiltration. This includes
+            monitoring communication channels and entry/exit points.
+          </p>
+        </div>
+      </div>
+
+      <h2>Operational Details</h2>
+      <p>
+        Deployment Date: You will be deployed to Raktus Island in three days.
+        Your first task will be to familiarize yourself with the island’s layout
+        and the locations where Genovia Supply Co. operates. Ensure that you
+        maintain your cover at all times, especially when interacting with
+        government personnel.
+      </p>
+
+      <p>
+        Duration: The initial phase of the operation is expected to last six
+        months, during which you will provide regular updates through secure
+        communication channels. Any immediate threats or discoveries that
+        require urgent attention should be reported immediately.
+      </p>
+
+      <h2>Security Protocols</h2>
+      <p>
+        Your safety and the integrity of this operation are of the utmost
+        importance. As such, adhere strictly to the following security
+        protocols:
+      </p>
+      <div>
+        <div>
+          <p>
+            1. Maintain Cover: Always present yourself as a dedicated logistics
+            coordinator. Do not deviate from your cover identity under any
+            circumstances.
+          </p>
+        </div>
+        <div>
+          <p>
+            2. Secure Communication: Use only the secure channels provided by
+            the Lugus Centre for transmitting sensitive information. Never
+            discuss mission details over unsecured lines.
+          </p>
+        </div>
+        <div>
+          <p>
+            3. Emergency Procedures: In the event of a compromised cover or
+            imminent danger, you will be provided with an emergency extraction
+            plan. Familiarize yourself with the protocol upon arrival.
+          </p>
+        </div>
+      </div>
+
+      <h2>Conclusion</h2>
+      <p>
+        This operation is critical to preventing the potential misuse of Project
+        Horus, which poses a significant threat to global security. Your role is
+        vital to gathering the intelligence needed to assess and neutralize this
+        threat. Stay focused, vigilant, and above all, maintain your cover at
+        all times.
+      </p>
+
+      <p>
+        We are counting on your success. Good luck, Agent
+        <span id="userName"></span>.
+      </p>
+    </div>
+  </body>
+</html>

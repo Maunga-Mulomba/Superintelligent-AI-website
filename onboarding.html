@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Onboarding - Lugus Institute</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/onboarding.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="home.html">
+            <i class="fa-solid fa-house"></i>
+          </a>
+          <!-- Home link -->
+        </div>
+        <!-- Burger Menu Icon -->
+        <div class="burger-menu">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+          <li><a href="library.html">Library</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="onboarding.html">Onboarding</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+          <li><a href="assignment.html">Assignment</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="onboarding">
+      <h1>CONFIDENTIAL</h1>
+      <p class="greeting">
+        Letter of deployment for Agent <span id="userName"></span>
+      </p>
+
+      <p>
+        Welcome to the Lugus Institute, where only the best and brightest are
+        chosen to protect humanity from the perils of unchecked technological
+        advancement. Your recruitment into the Centre was no small feat — among
+        thousands of applicants, you stood out not only for your exceptional
+        skills and intellect but also for your unwavering dedication to the
+        principles of safety, ethics, and human well-being.
+      </p>
+
+      <p>
+        As a new agent at Lugus, you will be working under the direct
+        supervision of one of our most experienced operatives, Agent James
+        Hawkins. Agent Hawkins has been instrumental in numerous high-stakes
+        operations and is renowned for his strategic acumen and expertise in
+        handling advanced technological threats.
+      </p>
+
+      <p>
+        Your first assignment is of utmost importance and carries significant
+        risk. We have recently uncovered information about a secret project
+        involving the development of superintelligent AI. The existence of this
+        project was brought to our attention by a whistleblower, who
+        courageously provided us with critical data that sheds light on the
+        scope and intent behind this AI initiative. After rigorous analysis, we
+        have determined that the risk is severe enough to warrant an undercover
+        operation — only the second such operation in our history.
+      </p>
+
+      <p>
+        For the next six months, you will be deployed to gather more intelligence on
+        this project. Your mission is to infiltrate the organizations behind this
+        AI development, identify key players, and collect evidence that will
+        allow us to dismantle this threat from the inside. The information we
+        have gathered so far paints a grim picture, but with your help, we can
+        prevent a catastrophe that could reshape the world as we know it.
+      </p>
+
+      <p>
+        This will not be an easy task, but we are confident in your abilities.
+        Remember, at the Lugus Institute, we operate with the highest levels of
+        secrecy and integrity. Your actions over the next six months will be
+        critical to our success, and we trust you to carry out your duties with
+        the utmost professionalism and discretion.
+      </p>
+
+      <p>
+        Welcome to the front lines, Agent. The future of humanity may very well
+        rest in your hands.
+      </p>
+    </div>
+
+    <script>
+      // Retrieve the userName from localStorage and insert it into the document
+      const userName = localStorage.getItem("userName");
+      document.getElementById("userName").textContent = userName;
+      document.getElementById("userName-repeat").textContent = userName;
+    </script>
+  </body>
+</html>

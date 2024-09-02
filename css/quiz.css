@@ -1,0 +1,76 @@
+body {
+  background: black;
+  font-family: Arial, sans-serif;
+}
+
+#quiz {
+  margin: 3rem auto;
+  color: white;
+  border: 1px solid white;
+  width: 75%;
+  padding: 2rem;
+  /* From https://css.glass */
+  background: rgba(100, 100, 100, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 2.6rem;
+  margin-bottom: 2rem;
+  color: #35b8e3;
+  text-align: center;
+}
+.question {
+  margin-bottom: 3rem;
+}
+
+.question p {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #35b8e3;
+}
+
+.question label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.question input[type="radio"] {
+  margin-right: 0.5rem;
+  accent-color: limegreen;
+}
+
+.question input[type="radio"]:checked + label {
+  color: black;
+  border-color: #35b8e3;
+}
+
+button {
+  display: block;
+  margin: 2rem auto;
+  padding: 0.7rem 2rem;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #35b8e3;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 0 20px rgba(53, 184, 227, 0.7);
+}
+
+button:hover {
+  background-color: #1e86ab;
+}
+
+button:active {
+  transform: scale(0.98);
+  box-shadow: 0 0 30px rgba(53, 184, 227, 1);
+}

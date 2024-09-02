@@ -1,0 +1,110 @@
+/* General body styling */
+body {
+  background: #121212; /* Dark background for contrast */
+  color: #f0f0f0; /* Light text color for readability */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling for the #about container */
+#about {
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 800px; /* Restrict width for better readability */
+  background: #1a1a1a; /* Slightly lighter background for the container */
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+/* Header styling */
+#about h1 {
+  color: #35b8e3;
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+#about h2 {
+  color: #35b8e3;
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+/* Styling for paragraphs */
+#about p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Mission section styling */
+#about .mission {
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-left: 4px solid #35b8e3;
+  padding-left: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Methods section styling */
+#about .methods {
+  margin: 1.5rem 0;
+}
+
+#about .methods div {
+  margin-bottom: 1rem;
+}
+
+#about .methods strong {
+  color: #35b8e3;
+  font-size: 1.2rem;
+}
+
+/* Impact cards styling */
+#about .impact-card {
+  background: #2a2a2a;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+#about .impact-card .number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #35b8e3;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+#about .impact-card p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  #about {
+    padding: 1rem;
+  }
+
+  #about h1 {
+    font-size: 2rem;
+  }
+
+  #about h2 {
+    font-size: 1.6rem;
+  }
+
+  #about .impact-card .number {
+    font-size: 1.5rem;
+  }
+
+  #about .impact-card p {
+    font-size: 0.9rem;
+  }
+}

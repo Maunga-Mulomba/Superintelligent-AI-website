@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Results - Lugus Centre for Technology Safety</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/results.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="home.html">
+            <i class="fa-solid fa-house"></i>
+          </a>
+          <!-- Home link -->
+        </div>
+        <!-- Burger Menu Icon -->
+        <div class="burger-menu">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+          <li><a href="library.html">Library</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="onboarding.html">Onboarding</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+          <li><a href="assignment.html">Assignment</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- results -->
+    <div id="results">
+      <h1>Quiz Results</h1>
+      <p id="score"></p>
+      <p id="feedback"></p>
+      <button onclick="window.location.href='quiz.html'">
+        Take Quiz Again
+      </button>
+      <button onclick="window.location.href='assignment.html'">
+        View Assignment
+      </button>
+    </div>
+    <script>
+      // Function to display the results and feedback
+      function showResults() {
+        // Retrieve the score from localStorage
+        const score = localStorage.getItem("quizScore");
+        let feedback = "";
+
+        // Determine feedback based on score
+        if (score >= 8) {
+          feedback =
+            "Excellent work! You have a strong understanding of the dangers and implications of superintelligent AI. Your knowledge is impressive and shows a deep awareness of these critical issues.";
+        } else if (score >= 5) {
+          feedback =
+            "Good job! You have a solid grasp of the key concepts related to superintelligent AI. Keep learning and stay informed about these emerging technologies and their potential impacts.";
+        } else if (score >= 3) {
+          feedback =
+            "You have a basic understanding of the topic. There is room for improvement. Consider revisiting the research materials to strengthen your knowledge on the risks and implications of superintelligent AI.";
+        } else {
+          feedback =
+            "It seems you may need to review the material again. Superintelligent AI is a complex subject, and understanding its risks and dangers is crucial. Take some time to study the content to improve your awareness.";
+        }
+
+        // Display the score and feedback
+        document.getElementById(
+          "score"
+        ).textContent = `Your Score: ${score}/10`;
+        document.getElementById("feedback").textContent = feedback;
+
+        // Clear the score from localStorage
+        localStorage.removeItem("quizScore");
+      }
+
+      // Run the showResults function on page load
+      window.onload = showResults;
+    </script>
+  </body>
+</html>

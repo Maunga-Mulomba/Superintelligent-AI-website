@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lugus Centre for Technology Safety - Library</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/library.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div id="library">
+      <header>
+        <nav>
+          <a href="home.html">
+            <i class="fa-solid fa-house"></i>
+          </a>
+        </nav>
+      </header>
+      <h1>Welcome, <span id="userName"></span>!</h1>
+
+      <div class="icons">
+        <!-- about -->
+        <a href="about.html">
+          <div class="icon-box">
+            <i class="fa-solid fa-book-open" style="color: #35b8e3"></i>
+          </div>
+          <p>About Us</p>
+        </a>
+        <!-- onboarding -->
+        <a href="onboarding.html">
+          <div class="icon-box">
+            <i class="fa-solid fa-user-check" style="color: #35b8e3"></i>
+          </div>
+          <p>Onboarding</p>
+        </a>
+        <!-- research -->
+        <a href="research.html">
+          <div class="icon-box">
+            <i class="fa-solid fa-microscope" style="color: #35b8e3"></i>
+          </div>
+          <p>Research</p>
+        </a>
+        <!-- quiz-->
+        <a href="quiz.html">
+          <div class="icon-box">
+            <i
+              class="fa-solid fa-clipboard-question"
+              style="color: #35b8e3"
+            ></i>
+          </div>
+          <p>Quiz</p>
+        </a>
+        <a href="assignment.html">
+          <div class="icon-box">
+            <i class="fa-solid fa-user-secret" style="color: #35b8e3"></i>
+          </div>
+          <p>Assignment</p>
+        </a>
+      </div>
+    </div>
+
+    <script>
+      // Function to display the user's name
+      function displayUserName() {
+        const name = localStorage.getItem("userName");
+        if (name) {
+          document.getElementById("userName").textContent = name;
+        } else {
+          // If the name isn't set, redirect to the home page
+          window.location.href = "home.html";
+        }
+      }
+
+      // Call the function to display the user's name when the page loads
+      displayUserName();
+    </script>
+  </body>
+</html>

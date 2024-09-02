@@ -1,0 +1,73 @@
+/* General body styling */
+body {
+  background: black;
+  font-family: Arial, sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling for the assignment container */
+#assignment {
+  margin: 2rem;
+  padding: 2rem;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+/* Header styling */
+#assignment h1,
+#assignment h2 {
+  color: #35b8e3;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* Styling for sections with <p> elements */
+#assignment p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Styling for bold text within paragraphs */
+#assignment p span {
+  font-weight: bold;
+}
+
+/* Styling for lists of objectives and security protocols */
+#assignment div > div {
+  margin-bottom: 1rem;
+}
+
+/* Enhanced styling for key points in lists */
+#assignment p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+/* Emphasis for items within lists */
+#assignment p > strong {
+  color: #35b8e3;
+}
+
+/* Adding spacing for <h2> elements */
+#assignment h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+/* Style for the <span> elements used for dynamic user names */
+#userName {
+  color: #35b8e3;
+}
+
+.objectives div {
+  background-color: red;
+}

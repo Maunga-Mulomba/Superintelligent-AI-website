@@ -1,0 +1,63 @@
+/* General body styling */
+body {
+  background: black;
+  font-family: Arial, sans-serif;
+}
+
+/* Quiz results container styling */
+#results {
+  margin: 3rem;
+  text-align: center;
+  border: 1px solid white;
+  padding: 2rem 0;
+}
+
+#score {
+  color: #35b8e3;
+}
+
+#feedback {
+  width: 70%;
+  margin: 2rem auto 0;
+  color: white;
+  line-height: 1.7;
+}
+
+/* Header styling within results */
+#results h1 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 2.6rem;
+  margin-bottom: 2rem;
+}
+
+/* Paragraph styling within results */
+#results p {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+/* Button styling within results */
+#results button {
+  margin: 1.5rem 1rem;
+  padding: 0.7rem 2rem;
+  font-size: 1.2rem;
+  color: black;
+  background-color: #35b8e3;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 20px rgba(53, 184, 227, 0.7);
+}
+
+#results button:hover {
+  background-color: #1e86ab;
+  color: white;
+}
+
+#results button:active {
+  transform: scale(0.98);
+  box-shadow: 0 0 30px rgba(53, 184, 227, 1);
+}
